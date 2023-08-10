@@ -38,7 +38,7 @@ export const Home = ()=>{
         <>
         <div className="title">Todo Application</div>
         <form className="action" onSubmit={handleSumbit}>
-                <input className="inputtask" placeholder="Today, i eat apple"  value={task} onChange={(e)=>setTask(e.target.value)} />
+                <input className="inputtask" placeholder="Today, i eat apple"  value={task} onChange={(e)=>setTask(e.target.value)} required />
                 <button >Add Task</button>
         </form>
         <div className="task">
