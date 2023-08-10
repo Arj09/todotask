@@ -16,6 +16,8 @@ export const Home = ()=>{
     const totaltask = data.length
 
     const handleAllclear =()=>{
+        let count = data.length
+        setdeleteCount(deleteCount + count)
         setData([])
         console.log(data)
     }
@@ -49,6 +51,21 @@ export const Home = ()=>{
         
         <div className="data">
         <button className="clear" onClick={handleAllclear}> Clear Completed</button>
+            {
+               
+                        <ul className="items1">
+                            
+                            <li style={{width: '50%'}} className="item1">Task</li>
+                            <li style={{width: '50%'}}   className="item1" >Action</li>
+                        </ul>
+                    
+                
+            }
+        
+
+
+
+
             {
                 data.map((data, index)=>{
                     return(
