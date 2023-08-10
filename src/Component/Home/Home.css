@@ -67,6 +67,31 @@ button{
     
     
 }
+
+.items1{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border: 0.2px solid gray;
+    margin: 10px;
+    list-style: none;
+    background-color: blue;
+    border: 0.2px solid blue;
+    color: white;
+    
+    padding: 5px 0px;
+
+
+}
+.item1{
+    
+    align-items: center;
+    word-wrap: break-word;
+    margin: 5px 5px;
+    text-align: center;
+
+}
 .items{
     display: flex;
     flex-direction: row;
