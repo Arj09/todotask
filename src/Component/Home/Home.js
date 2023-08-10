@@ -11,6 +11,7 @@ export const Home = ()=>{
     const handleSumbit = (e)=>{
         e.preventDefault();
         setData( data=>([...data, task]))
+        setTask('')
     }
     const totaltask = data.length
 
